@@ -10,7 +10,6 @@ public class Fridge extends Appliances {
         volume = 200;
         isFreezerExist = true;
         countDoor = 2;
-        printInfo();
     }
 
     public Fridge(int volume, boolean isFreezerExist, int countDoor) {
@@ -18,7 +17,6 @@ public class Fridge extends Appliances {
         this.volume = volume;
         this.isFreezerExist = isFreezerExist;
         this.countDoor = countDoor;
-        printInfo();
     }
 
     public Fridge(String color, String country, int weight, int volume, boolean isFreezerExist, int countDoor) {
@@ -26,7 +24,6 @@ public class Fridge extends Appliances {
         this.volume = volume;
         this.isFreezerExist = isFreezerExist;
         this.countDoor = countDoor;
-        printInfo();
     }
 
     public Fridge(String color, String country, int weight, String size, double period, String power, int volume, boolean isFreezerExist, int countDoor) {
@@ -34,7 +31,6 @@ public class Fridge extends Appliances {
         this.volume = volume;
         this.isFreezerExist = isFreezerExist;
         this.countDoor = countDoor;
-        printInfo();
     }
 
     public int getVolume() {
@@ -63,18 +59,19 @@ public class Fridge extends Appliances {
 
     @Override
     public void printInfo() {
-        System.out.println("Был создан экземпляр класса ");
-        System.out.println("Fridge{" +
+        System.out.println("Экземпляр класса ");
+        System.out.println("Fridge{" + '\n' +
                 "volume=" + volume + '\n' +
                 ", isFreezerExist=" + isFreezerExist + '\n' +
                 ", countDoor=" + countDoor + '\n' +
-                ", color='" + super.getColor() + '\n' +
-                ", country='" + super.getCountry() + '\n' +
+                ", color=" + super.getColor() + '\n' +
+                ", country=" + super.getCountry() + '\n' +
                 ", weight=" + super.getWeight() + '\n' +
                 ", size=" + super.getSize() + '\n' +
                 ", power=" + super.getPowerConsumption() + '\n' +
                 ", warranty period=" + super.getWarrantyPeriod() + '\n' +
                 '}');
+        System.out.println();
     }
 
 }
