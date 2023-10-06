@@ -38,4 +38,6 @@ public abstract class Technic {
         this.powerConsumption = power;
     }
 
+    public abstract void printInfo();
+
 }
