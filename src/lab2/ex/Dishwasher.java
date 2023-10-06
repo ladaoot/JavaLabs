@@ -34,7 +34,6 @@ public class Dishwasher extends Appliances {
         waterConsumption = 10;
         capacityOfSet = 14;
         numberOfWashingPrograms = 6;
-        printInfo();
     }
 
     public Dishwasher(int waterConsumption, int capacityOfSet, int numberOfWashingPrograms) {
@@ -42,7 +41,6 @@ public class Dishwasher extends Appliances {
         this.waterConsumption = waterConsumption;
         this.capacityOfSet = capacityOfSet;
         this.numberOfWashingPrograms = numberOfWashingPrograms;
-        printInfo();
     }
 
     public Dishwasher(String color, String country, int weight, int waterConsumption, int capacityOfSet, int numberOfWashingPrograms) {
@@ -50,7 +48,6 @@ public class Dishwasher extends Appliances {
         this.waterConsumption = waterConsumption;
         this.capacityOfSet = capacityOfSet;
         this.numberOfWashingPrograms = numberOfWashingPrograms;
-        printInfo();
     }
 
     public Dishwasher(String color, String country, int weight, String size, double period, String power, int waterConsumption, int capacityOfSet, int numberOfWashingPrograms) {
@@ -58,23 +55,23 @@ public class Dishwasher extends Appliances {
         this.waterConsumption = waterConsumption;
         this.capacityOfSet = capacityOfSet;
         this.numberOfWashingPrograms = numberOfWashingPrograms;
-        printInfo();
     }
 
     @Override
     public void printInfo() {
-        System.out.println("Был создан экземпляр класса ");
-        System.out.println("Dishwasher{" +
+        System.out.println("Экземпляр класса ");
+        System.out.println("Dishwasher{" + '\n' +
                 "waterConsumption=" + waterConsumption + '\n' +
                 ", capacityOfSet=" + capacityOfSet + '\n' +
                 ", numberOfWashingPrograms=" + numberOfWashingPrograms + '\n' +
-                ", color='" + super.getColor() + '\n' +
-                ", country='" + super.getCountry() + '\n' +
+                ", color=" + super.getColor() + '\n' +
+                ", country=" + super.getCountry() + '\n' +
                 ", weight=" + super.getWeight() + '\n' +
                 ", size=" + super.getSize() + '\n' +
                 ", power=" + super.getPowerConsumption() + '\n' +
                 ", warranty period=" + super.getWarrantyPeriod() + '\n' +
                 '}');
+        System.out.println();
     }
 
 }
