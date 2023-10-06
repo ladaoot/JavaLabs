@@ -26,6 +26,13 @@ public class VacuumCleaner extends Appliances {
         this.typeOfFilter = typeOfFilter;
     }
 
+    public VacuumCleaner(double volumeOfTheDustCollector, int suctionPower, String typeOfFilter) {
+        super();
+        this.volumeOfTheDustCollector = volumeOfTheDustCollector;
+        this.suctionPower = suctionPower;
+        this.typeOfFilter = typeOfFilter;
+    }
+
     public double getVolumeOfTheDustCollector() {
         return volumeOfTheDustCollector;
     }
@@ -52,18 +59,19 @@ public class VacuumCleaner extends Appliances {
 
     @Override
     public void printInfo() {
-        System.out.println("Был создан экземпляр класса ");
-        System.out.println("VacuumCleaner{" +
+        System.out.println("Экземпляр класса ");
+        System.out.println("VacuumCleaner{" + '\n' +
                 "volumeOfTheDustCollector=" + volumeOfTheDustCollector + '\n' +
                 ", suctionPower=" + suctionPower + '\n' +
-                ", typeOfFilter='" + typeOfFilter + '\n' +
-                ", color='" + super.getColor() + '\n' +
-                ", country='" + super.getCountry() + '\n' +
+                ", typeOfFilter=" + typeOfFilter + '\n' +
+                ", color=" + super.getColor() + '\n' +
+                ", country=" + super.getCountry() + '\n' +
                 ", weight=" + super.getWeight() + '\n' +
                 ", size=" + super.getSize() + '\n' +
                 ", power=" + super.getPowerConsumption() + '\n' +
                 ", warranty period=" + super.getWarrantyPeriod() + '\n' +
                 '}');
+        System.out.println();
     }
 
 }
