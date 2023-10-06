@@ -4,7 +4,7 @@ public class Appliances extends Technic {
     private String color;
     private String country;
     private int weight;
-    private int countObject = 0;
+    private static int countObject;
 
     public Appliances() {
         super();
@@ -12,14 +12,13 @@ public class Appliances extends Technic {
         country = "China";
         weight = 20;
         countObject++;
-        printInfo();
     }
 
     public Appliances(String color, String country, int weight) {
         this.color = color;
         this.country = country;
         this.weight = weight;
-        printInfo();
+        countObject++;
     }
 
     public Appliances(String color, String country, int weight, String size, double period, String power) {
@@ -28,8 +27,6 @@ public class Appliances extends Technic {
         this.country = country;
         this.weight = weight;
         countObject++;
-
-        printInfo();
     }
 
     public String getColor() {
@@ -62,8 +59,8 @@ public class Appliances extends Technic {
 
 
     public void printInfo() {
-        System.out.println("Был создан экземпляр класса ");
-        System.out.println("Appliances{" +
+        System.out.println("Экземпляр класса ");
+        System.out.println("Appliances{" + '\n' +
                 "color=" + color + '\n' +
                 ", country=" + country + '\n' +
                 ", weight=" + weight + '\n' +
@@ -71,6 +68,7 @@ public class Appliances extends Technic {
                 ", power=" + super.getPowerConsumption() + '\n' +
                 ", warranty period=" + super.getWarrantyPeriod() + '\n' +
                 '}');
+        System.out.println();
     }
 
 
