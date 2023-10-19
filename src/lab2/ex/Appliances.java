@@ -56,7 +56,7 @@ public class Appliances extends Technic {
     public int getCountObject() {
         return countObject;
     }
-
+    
 
     public void printInfo() {
         System.out.println("Экземпляр класса ");
