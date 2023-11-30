@@ -5,11 +5,11 @@ import java.util.*;
 public class HashTable<K, V> {
 
     private static final int DEFAULT_SIZE = 8;
-    private List<Entry<K, V>>[] entries;
+    private LinkedList<Entry<K, V>>[] entries;
     private int count;
 
     public HashTable() {
-            entries = (List<Entry<K, V>>[]) new List[DEFAULT_SIZE];
+            entries = (LinkedList<Entry<K,V>>[]) new LinkedList[DEFAULT_SIZE];
             count = 0;
     }
 
@@ -70,6 +70,14 @@ public class HashTable<K, V> {
         return null;
     }
 
+    public void getAll(){
+        System.out.println("[");
+        for (LinkedList<Entry<K, V>> l:entries) {
+            System.out.println(l);
+        }
+        System.out.println("]");
+    }
+
     private static class Entry<K, V> {
         private K key;
         private V value;
@@ -83,16 +91,20 @@ public class HashTable<K, V> {
             return key;
         }
 
-        public void setKey(K key) {
-            this.key = key;
-        }
-
         public V getValue() {
             return value;
         }
 
         public void setValue(V value) {
             this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return "Entry{" +
+                    "key=" + key +
+                    ", value=" + value +
+                    '}';
         }
     }
 }

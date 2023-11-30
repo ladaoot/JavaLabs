@@ -24,6 +24,11 @@ public class Main {
         hashTable.put("899999999", contact1);
         hashTable.put("666666666", contact2);
         hashTable.put("999666999", contact3);
+        hashTable.put("999666979", new Contact());
+        hashTable.put("999666799", new Contact());
+        hashTable.put("999666991", new Contact());
+
+        hashTable.getAll();
 
         //Вывод данных о hashtable
         System.out.println(hashTable.isEmpty());

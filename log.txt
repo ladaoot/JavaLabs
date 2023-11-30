@@ -1,0 +1,4 @@
+Nov 17, 2023 11:33:25 AM lab4.Test main
+SEVERE: lab4.CustomAgeException: Возраст не корректен 
+Nov 17, 2023 11:34:27 AM lab4.Test main
+SEVERE: lab4.CustomAgeException: Возраст не корректен 
