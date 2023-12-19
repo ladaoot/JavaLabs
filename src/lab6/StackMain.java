@@ -12,5 +12,18 @@ public class StackMain {
         System.out.println(stack.peek());
         stack.push(5);
         System.out.println(stack.peek());
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(5);
+        stack.push(7);
+        System.out.println(stack.peek());
     }
 }

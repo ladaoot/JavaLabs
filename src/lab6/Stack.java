@@ -28,6 +28,7 @@ public class Stack<T> {
             return null;
         }
         T el = data[size-1];
+        data[size-1]=null;
         size--;
         return el;
     }
